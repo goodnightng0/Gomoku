@@ -6,11 +6,13 @@ Gomoku implemented by Alpha-Beta pruning
 - The board has 19 × 19 positions.
 
 ## Implementation Results
-<p align="center>
-<img src="/results/result1.png" height="40%" width="40%" alt="Result #1"></img>
-<img src="/results/result2.png" height="40%" width="40%" alt="Result #2"></img>
-<img src="/results/result3.png" height="40%" width="40%" alt="Result #3"></img>
-</p>
+<p align="center">
+<img src="/results/result1.png" height="50%" width="50%" alt="Result #1"></img></p>
+<p align="center">                                                                        
+<img src="/results/result2.png" height="40%" width="40%" alt="Result #2"></img></p>
+<p align="center">
+<img src="/results/result3.png" height="30%" width="30%" alt="Result #3"></img></p>
+
 
 ## Implementation
 The gomoku playing application I built consists of 4 classes.
@@ -49,3 +51,6 @@ We first keep the depth as 1 as our initial value. If there is more time, we gra
 Then, the alphabetasearch returns the best choice available.
 Because it has to give the best move for AI, we set alpha as the maximum valued move for the AI agent.
 ```
+
+## References
+* [GeeksforGeeks](https://www.geeksforgeeks.org/minimax-algorithm-in-game-theory-set-4-alpha-beta-pruning/)
