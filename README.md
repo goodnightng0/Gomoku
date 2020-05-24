@@ -1,5 +1,7 @@
 # Gomoku
 Gomoku implemented by Alpha-Beta pruning
+Written in Java   
+
 ## Program Goals
 - Implement an alpha-beta search with iterative deepening search.
 - There is a preset time limit for each move, e.g., 10 seconds. 
