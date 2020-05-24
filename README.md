@@ -1,5 +1,5 @@
 # Gomoku
-Gomoku implemented by Alpha-Beta pruning
+Gomoku implemented by Alpha-Beta pruning   
 Written in Java   
 
 ## Program Goals
