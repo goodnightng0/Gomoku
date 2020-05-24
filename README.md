@@ -34,8 +34,9 @@ Humans will have ‘x’ as our stone, ‘o’ for AI and ‘.’ for blank slot
 
 ## AlphaBeta
 ```
-We implement the AlphaBeta pruning search algorithm
-The scoreEvaluate function calculates each of the players scores up till now. It uses the calculateScore which examines how many stones are in a row horizontally, vertically and diagonally. It uses the getscore function above which evaluates the conditions heuristically. I have assigned points for each environments, having a higher value if it has more stones in a row.
-calculateNextMove tells the AI agent which action it should choose next. Because we have chosen it to be an iterative deepening search, we save the current time in start time. We also check in advance if any available move can terminate the game.
-We first keep the depth as 1 as our initial value. If there is more time, we gradually increment the depth by one. Then, the alphabetasearch returns the best choice available. Because it has to give the best move for AI, we set alpha as the maximum valued move for the AI agent.
+Implement the AlphaBeta pruning search algorithm:
+The scoreEvaluate function calculates each of the players scores up until now. It uses the calculateScore which examines how many stones are in a row horizontally, vertically and diagonally, evaluating the conditions heuristically. 
+We first keep the depth as 1 as our initial value. If there is more time, we gradually increment the depth by one. 
+Then, the alphabetasearch returns the best choice available.
+Because it has to give the best move for AI, we set alpha as the maximum valued move for the AI agent.
 ```
