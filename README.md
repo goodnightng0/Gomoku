@@ -7,10 +7,15 @@ Gomoku implemented by Alpha-Beta pruning
 
 ## Implementation Results
 <p align="center">
+  1. Enter your first move<br>
 <img src="/results/result1.png" height="50%" width="50%" alt="Result #1"></img></p>
+
 <p align="center">                                                                        
+  2. The program will return a move for the AI gomoku computer<br>
 <img src="/results/result2.png" height="40%" width="40%" alt="Result #2"></img></p>
+
 <p align="center">
+  3. After a number of moves(omitted), when there is a winner it will print the result along with the heuristic scores<br>
 <img src="/results/result3.png" height="30%" width="30%" alt="Result #3"></img></p>
 
 
@@ -28,7 +33,7 @@ Then we set the max time limit for our iterative deepening alpha beta search.
 This will function as our main class.
 ```
 
-## Play
+### Play
 ```
 We set who will make the first move and the max time limit for our search.
 If the ai has to start, we place it in (10, 10) right in the center, which has the highest probability to win.
@@ -36,13 +41,13 @@ In and between, we check if there are any winners.( 2 for human and 1 for the co
 We terminate the game if the alphabeta returns a null value which means that the board is full. 
 ```
 
-## Design
+### Design
 ```
 Design constructs a matrix that we can use to keep track of our positions/generated moves.
 Humans will have ‘x’ as our stone, ‘o’ for AI and ‘.’ for blank slots.
 ```
 
-## AlphaBeta
+### AlphaBeta
 ```
 Implement the AlphaBeta pruning search algorithm:
 We calculate each of the players scores up until now by evaluating the conditions heuristically. 
